@@ -1,14 +1,16 @@
-import os
-import json
 import smtplib
 import requests
 from bs4 import BeautifulSoup
+
+import logging
+import os
+import json
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.header import Header
 from email.utils import formataddr
 from datetime import datetime
-import logging
+
 
 # 网站地址
 url = 'https://vcb-s.com'
